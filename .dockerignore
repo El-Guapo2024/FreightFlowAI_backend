@@ -1,0 +1,15 @@
+# Ignore virtual environments
+venv/
+backend_venv/
+.env/
+# Ignore compiled python files
+__pycache__/
+*.pyc
+*.pyo
+# Ignore local configuration and secrets
+.env
+.vscode/
+.idea/
+.git/
+# Ignore local uploaded files
+local_files/

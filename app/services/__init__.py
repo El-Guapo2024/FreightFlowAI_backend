@@ -1,0 +1,1 @@
+from .ocr_service import upload_document, run_ocr
