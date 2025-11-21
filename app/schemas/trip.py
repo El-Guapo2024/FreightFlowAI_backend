@@ -8,6 +8,7 @@ class TripBase(AppBaseModel):
     dropoff_city: str
     broker_id: Optional[str] = None
     driver_id: Optional[int] = None
+    rate: Optional[int] = None
 
 class TripCreate(TripBase):
     pass
@@ -17,6 +18,7 @@ class TripUpdate(AppBaseModel):
     pickup_city: Optional[str] = None
     dropoff_city: Optional[str] = None
     status: Optional[str] = None
+    rate: Optional[int] = None
 
 class TripOut(TripBase):
     id: int

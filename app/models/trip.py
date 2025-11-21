@@ -12,6 +12,7 @@ class Trip(Base):
     pickup_city = Column(String, nullable=True)
     dropoff_city = Column(String, nullable=True)
     status = Column(String, default="planned")
+    rate = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=datetime.datetime.now(datetime.UTC))
 
     # Relationship to documents
